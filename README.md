@@ -4,9 +4,7 @@ Work in progress
 
 ![alt text](https://github.com/QuentinDanneville/Slingshot/blob/master/src/static/img/slingshot.jpg)
 
-Illustration by : Quentin Danneville
-
-Developed by : Quentin Danneville
+Illustration & developped by me :))
 
 Description Project : Smooth & fluid transition between your website's pages
 
