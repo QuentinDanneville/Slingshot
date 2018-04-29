@@ -13,7 +13,7 @@ body {
             top: 0;
             left: 0;
 
-            background-color: blue;
+            background-color: @salmon;
 
             z-index: 1000;
         }
@@ -21,7 +21,7 @@ body {
             animation: page-transition 0.8s cubic-bezier(.77, 0, .175, 1) forwards;
         }
         &:after {
-        	background-color: lighten(blue,5%);
+        	background-color: lighten(@salmon,5%);
             animation: page-transition 1s cubic-bezier(.77, 0, .175, 1) forwards;
         }
     }
@@ -39,7 +39,7 @@ body {
             top: 0;
             left: 0;
 
-            background-color: blue;
+            background-color: @salmon;
 
             z-index: 1000;
         }
@@ -47,7 +47,7 @@ body {
             animation: page-transition 1s reverse cubic-bezier(.77, 0, .175, 1) forwards;
         }
         &:after {
-        	background-color: lighten(blue,5%);
+        	background-color: lighten(@salmon,5%);
             animation: page-transition 0.8s reverse cubic-bezier(.77, 0, .175, 1) forwards;
         }
     }

@@ -15,18 +15,23 @@ delaysLink.forEach((link, index) => {
         let path = link.getAttribute('href');
         document.querySelector('body').classList.add('transitionOut');
 
-        // check if any anchor exists
 
-        setTimeout(() => {
-            url.pathname = path;
-            url.hash = "delay";
+        // Check if any anchor already exists
+        if (url.hash == "") {
+            setTimeout(() => {
+                url.pathname = path;
+                url.hash = "delay";
+                window.location.href = url.href;
+            }, 1000);
+        }
+        else {
             window.location.href = url.href;
-        }, 1000);
+        }
     })
 })
 
 function getHashUrl() {
-    if (url.hash == '#delay') 
+    if (url.hash == '#delay')
         pageTransitionIn();
 }
 
@@ -40,5 +45,5 @@ function pageTransitionIn() {
 
 function refreshState() {
     url.hash = ""
-    history.replaceState(null,null, url.href);
+    history.replaceState(null, null, url.href);
 }
