@@ -1,0 +1,22 @@
+/*==================================
+=            Style.less            =
+
+Unique entry point for our CSS.
+Includes all other pages and styles
+==================================*/
+
+//Vendors are third-party libs or scripts
+@import "vendors/normalize.less";
+
+//common files are standart project reusable files
+
+//Components are reusable standalone components
+
+@import "components/animations/page-transition.less";
+
+//Pages are page-specific styles
+@import "pages/home.less";
+@import "pages/pages.less";
+
+//Typo • All font files. Styling is done in typo/typo.less
+@import "typo/typo.less";

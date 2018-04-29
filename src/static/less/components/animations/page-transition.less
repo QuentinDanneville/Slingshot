@@ -1,0 +1,63 @@
+body {
+    &.transitionOut {
+        position: relative;
+
+        &:before,
+        &:after {
+            content: '';
+            position: absolute;
+
+            width: 100%;
+            height: 100%;
+
+            top: 0;
+            left: 0;
+
+            background-color: blue;
+
+            z-index: 1000;
+        }
+        &:before {
+            animation: page-transition 0.8s cubic-bezier(.77, 0, .175, 1) forwards;
+        }
+        &:after {
+        	background-color: lighten(blue,5%);
+            animation: page-transition 1s cubic-bezier(.77, 0, .175, 1) forwards;
+        }
+    }
+    &.transitionIn {
+        position: relative;
+
+        &:before,
+        &:after {
+            content: '';
+            position: absolute;
+
+            width: 100%;
+            height: 100%;
+
+            top: 0;
+            left: 0;
+
+            background-color: blue;
+
+            z-index: 1000;
+        }
+        &:before {
+            animation: page-transition 1s reverse cubic-bezier(.77, 0, .175, 1) forwards;
+        }
+        &:after {
+        	background-color: lighten(blue,5%);
+            animation: page-transition 0.8s reverse cubic-bezier(.77, 0, .175, 1) forwards;
+        }
+    }
+}
+
+@keyframes page-transition {
+    from {
+        left: -100%;
+    }
+    to {
+        left: 0;
+    }
+}

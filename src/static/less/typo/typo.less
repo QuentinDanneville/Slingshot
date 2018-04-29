@@ -1,0 +1,69 @@
+@light: 300;
+@normal: 400;
+@bold: 700;
+@black: 900;
+
+@basefont: 1;
+@font-size: @basefont + 0em;
+@font-family: "proxima_nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+
+@font-face {
+    font-family: 'proxima_nova';
+    src: url('fonts/proxima-nova-webfont.eot');
+    src: url('fonts/proxima-nova-webfont.svg#proxima_nova_rgregular') format('svg'),
+    url('fonts/proxima-nova-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/proxima-nova-webfont.woff2') format('woff2'),
+    url('fonts/proxima-nova-webfont.woff') format('woff'),
+    url('fonts/proxima-nova-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'proxima_nova';
+    src: url('fonts/proxima-nova-black-webfont.eot');
+    src: url('fonts/proxima-nova-black-webfont.svg#proxima_nova_blblack') format('svg'),
+    url('fonts/proxima-nova-black-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/proxima-nova-black-webfont.woff2') format('woff2'),
+    url('fonts/proxima-nova-black-webfont.woff') format('woff'),
+    url('fonts/proxima-nova-black-webfont.ttf') format('truetype');
+    font-weight: @black;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'proxima_nova';
+    src: url('fonts/proxima-nova-bold-webfont.eot');
+    src: url('fonts/proxima-nova-bold-webfont.svg#proxima_nova_rgbold') format('svg'),
+    url('fonts/proxima-nova-bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/proxima-nova-bold-webfont.woff2') format('woff2'),
+    url('fonts/proxima-nova-bold-webfont.woff') format('woff'),
+    url('fonts/proxima-nova-bold-webfont.ttf') format('truetype');
+    font-weight: @bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'proxima_nova';
+    src: url('fonts/proxima-nova-light-webfont.eot');
+    src: url('fonts/proxima-nova-light-webfont.svg#proxima_nova_ltlight') format('svg'),
+    url('fonts/proxima-nova-light-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/proxima-nova-light-webfont.woff2') format('woff2'),
+    url('fonts/proxima-nova-light-webfont.woff') format('woff'),
+    url('fonts/proxima-nova-light-webfont.ttf') format('truetype');
+    font-weight: @light;
+    font-style: normal;
+
+}
+
+html {
+    -webkit-font-smoothing: antialiased;
+}
+
+body { 
+    font-size: @font-size;
+    font-family: @font-family; 
+    font-weight: @normal; 
+    color: #333;
+}
