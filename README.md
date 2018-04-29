@@ -1,6 +1,10 @@
+Work in progress
+
 # Slingshot README
 
-Project owner : Quentin Danneville
+![alt text](https://github.com/QuentinDanneville/Slingshot/blob/master/src/static/img/slingshot.jpg)
+
+Illustration by : Quentin Danneville
 
 Developed by : Quentin Danneville
 
