@@ -1,4 +1,5 @@
-import * as transitionPage from './modules/pageTransition';
+// import * as transitionPage from './modules/pageTransition';
+import slingshot from './modules/pageTransition'
 
-document.addEventListener('DOMContentLoaded', function() {
-});
+window.slingshot = slingshot;
+
