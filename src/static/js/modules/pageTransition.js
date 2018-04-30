@@ -13,11 +13,10 @@ delaysLink.forEach((link, index) => {
         event.preventDefault();
 
         let path = link.getAttribute('href');
-        document.querySelector('body').classList.add('transitionOut');
 
-
-        // Check if any anchor already exists
-        if (url.hash == "") {
+        // Check if any anchor already exists and if the path isn't the same
+        if (path != url.pathname && link.hash == "") {
+            document.querySelector('body').classList.add('transitionOut');
             setTimeout(() => {
                 url.pathname = path;
                 url.hash = "delay";
@@ -25,8 +24,9 @@ delaysLink.forEach((link, index) => {
             }, 1000);
         }
         else {
-            window.location.href = url.href;
+            window.location.href = path;
         }
+
     })
 })
 
